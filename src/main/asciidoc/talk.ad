@@ -1,0 +1,42 @@
+= Documentación de Arquitectura
+:icons: font
+:twitter-tag: ACCSA
+:conference-tag:
+:talk-tag: Docs Architecture
+:linkattrs:
+
+include::footer.ad[]
+
+[NOTE.speaker]
+====
+Contenido de la presentación:
+
+* Secciones teóricas:
+**  Arquitectura como prerequisito.
+**  Diseño de alto nivel.
+**  ¿Qué determina la arquitectura?
+**  Good vs Bad
+**  Dificultades
+**  Componentes
+*** Organización del programa
+*** Clases importantes
+*** Diseño de los datos
+*** Business Rules
+*** Resource management
+*** Security
+*** Performance
+*** Scalability
+*** Internationalization & Localization
+*** Input / Output
+*** Error processing
+*** Fault tolerance
+*** Feasibility
+*** Over engineering
+*** Buy vs Build decisions
+*** Reuse decisions
+*** Change strategy
+** Checklist
+** Ejemplos
+====
+
+include::self.ad[]
