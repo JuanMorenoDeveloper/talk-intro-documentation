@@ -103,11 +103,56 @@ Cambiar la arquitectura luego de iniciado el desarrollo es muy **costoso**.
 * Cada componente debe tener un rol en el sistema.
 
 == Organización del programa
+
 * Se recomienda que cada componente conozca tan poco como pueda de los otros componentes y que maneje una sola responsabilidad.
 * La comunicación entre cada bloque del sistema debe estar definida.
 * La arquitectura debe describir las dependencias de cada bloque (directas/indirectas).
 
 == Clases principales
+
+* La arquitectura debe especificar cuales son las clases/sub-sistemas principales del sistema.
+
+* No se requiere especificar el 100% de las clases. **Procura explicar el 20% de las clases que describan el otro 80%**.
+
+== Diseño de datos
+
+* Igual que con las clases, la arquitectura debe definir cuales son los archivos o tablas principales. Si hubieron alternativas, justificar el por qué de la elección.
+
+* Las estructuras de datos también deben estar documentadas, por ejemplo si se usa una Lista o una Pila ¿por qué hubo preferencia entre una y otra?. Esta información es valiosa para el mantenimiento.
+
+* La arquitectura debe mostrar en alto nivel la organización de datos y sus contenidos.
+
+== Reglas de negocio
+
+* Si la arquitectura depende de las reglas de negocio, se debe explicar el impacto de ellas en el diseño del sistema.
+
+== Diseño de interfaz de usuario
+
+* La arquitectura debe definir el formato de las páginas web, de la línea de comandos o la interfaz gráfica.
+
+* La arquitectura debe ser modularizada de tal manera que cambiar una interfaz de usuario no afecte las reglas de negocio del sistema.
+
+== Administración de recursos
+
+* La arquitectura debe describir un plan para administración de escasos recursos (conexión de bases de datos, threads, storage).
+
+* Se deben evidenciar cuales recursos son necesarios y dimensionar cuánto de ellos se requiere para funcionamiento nominales o extremo del sistema.
+
+== Seguridad
+
+* La arquitectura debe describir la seguridad a nivel de diseño y código del sistema.
+
+* Las prácticas y convenciones de código del sistema deben considerar las recomendaciones de seguridad (validaciones, encriptación, manejo de buffer, mensajes de error y datos en memoria).
+
+== Rendimiento
+
+* Si el rendimiento es un requisito, la arquitectura debe indicar cuales son los objetivos en cuanto a rendimiento y evidenciar cuales funcionalidades pueden tener riesgos.
+
+* En caso de selección de algoritmos o estructuras de datos específicos la arquitectura debe mencionarlo.
+
+* Para cada caso se debe mencionar los costos y recursos asociados.
+
+== Escalabilidad
 
 
 
