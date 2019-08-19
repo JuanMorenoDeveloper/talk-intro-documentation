@@ -1,4 +1,5 @@
 = Documentación de Arquitectura
+
 :icons: font
 :twitter-tag: ACCSA
 :conference-tag:
@@ -12,12 +13,12 @@ include::footer.ad[]
 Contenido de la presentación:
 
 * Secciones teóricas:
-**  Arquitectura como prerequisito.
-**  Diseño de alto nivel.
-**  ¿Qué determina la arquitectura?
-**  Good vs Bad
-**  Dificultades
-**  Componentes
+** Arquitectura como prerequisito.
+** Diseño de alto nivel.
+** ¿Qué determina la arquitectura?
+** Good vs Bad
+** Dificultades
+** Componentes
 *** Organización del programa
 *** Clases importantes
 *** Diseño de los datos
@@ -38,5 +39,76 @@ Contenido de la presentación:
 ** Checklist
 ** Ejemplos
 ====
+
+== Arquitectura como pre requisito
+
+Conocida también como:
+
+* Arquitectura del sistema
+
+* Diseño de alto nivel
+
+Descrita en el documento de:
+
+* Especificación de arquitectura
+
+== Arquitectura como pre requisito
+
+La arquitectura y la construcción del sistema están relacionadas.
+
+**La calidad de la arquitectura determina la integridad conceptual del sistema**
+
+McConnell S. Code Complete
+
+… Que a vez determina la calidad del sistema.
+
+== Arquitectura como pre requisito
+
+* Una buena arquitectura:
+** provee la bases para el mantenimiento del sistema.
+** facilita el desarrollo.
+* Una mala arquitectura **complica** el desarrollo.
+
+== !
+
+image::good-idea.gif[width='50%']
+
+== !
+
+image::bad-idea.gif[width='50%']
+
+== !
+
+Sin una buena arquitectura:
+
+* podemos tener el problema correcto pero la solución incorrecta.
+
+* va ser muy difícil desarrollar la aplicación correctamente.
+
+== Difícil de cambiar
+
+Cambiar la arquitectura luego de iniciado el desarrollo es muy **costoso**.
+
+* El tiempo necesario para cambiar un error en la arquitectura es del mismo orden que cambiar un requisito.
+
+* Es más fácil cambiar la arquitectura al inicio del proyecto.
+
+== Componentes de la arquitectura
+
+== Organización del programa
+
+* La arquitectura de un sistema requiere una descripción general.
+* Las elecciones deben estar justificadas (tener un propósito).
+* La arquitectura debe definir los componentes más importantes del sistema.
+* Cada componente debe tener un rol en el sistema.
+
+== Organización del programa
+* Se recomienda que cada componente conozca tan poco como pueda de los otros componentes y que maneje una sola responsabilidad.
+* La comunicación entre cada bloque del sistema debe estar definida.
+* La arquitectura debe describir las dependencias de cada bloque (directas/indirectas).
+
+== Clases principales
+
+
 
 include::self.ad[]

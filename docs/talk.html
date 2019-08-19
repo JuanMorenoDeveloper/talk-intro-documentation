@@ -9,7 +9,7 @@
 .conum[data-value]:after{content:attr(data-value)}
 pre .conum[data-value]{position:relative;top:-.125em}
 b.conum *{color:inherit!important}
-.conum:not([data-value]):empty{display:none}</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" /><link href="theme/highlightjs-theme/github.css" rel="stylesheet" /><script>var link = document.createElement( 'link' );
+.conum:not([data-value]):empty{display:none}</style><link href="theme/highlightjs-theme/github.css" rel="stylesheet" /><script>var link = document.createElement( 'link' );
 link.rel = 'stylesheet';
 link.type = 'text/css';
 link.href = window.location.search.match( /print-pdf/gi ) ? "reveal.js-3.7.0/css/print/pdf.css" : "reveal.js-3.7.0/css/print/paper.css";
@@ -29,6 +29,25 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );</script><!--[if 
 </div>
 <aside class="notes"><div class="paragraph"><p>Contenido de la presentación:</p></div>
 <div class="ulist"><ul><li><p>Secciones teóricas:</p><div class="ulist"><ul><li><p>Arquitectura como prerequisito.</p></li><li><p>Diseño de alto nivel.</p></li><li><p>¿Qué determina la arquitectura?</p></li><li><p>Good vs Bad</p></li><li><p>Dificultades</p></li><li><p>Componentes</p><div class="ulist"><ul><li><p>Organización del programa</p></li><li><p>Clases importantes</p></li><li><p>Diseño de los datos</p></li><li><p>Business Rules</p></li><li><p>Resource management</p></li><li><p>Security</p></li><li><p>Performance</p></li><li><p>Scalability</p></li><li><p>Internationalization &amp; Localization</p></li><li><p>Input / Output</p></li><li><p>Error processing</p></li><li><p>Fault tolerance</p></li><li><p>Feasibility</p></li><li><p>Over engineering</p></li><li><p>Buy vs Build decisions</p></li><li><p>Reuse decisions</p></li><li><p>Change strategy</p></li></ul></div></li><li><p>Checklist</p></li><li><p>Ejemplos</p></li></ul></div></li></ul></div></aside></div></section>
+<section id="_arquitectura_como_pre_requisito"><h2>Arquitectura como pre requisito</h2><div class="paragraph"><p>Conocida también como:</p></div>
+<div class="ulist"><ul><li><p>Arquitectura del sistema</p></li><li><p>Diseño de alto nivel</p></li></ul></div>
+<div class="paragraph"><p>Descrita en el documento de:</p></div>
+<div class="ulist"><ul><li><p>Especificación de arquitectura</p></li></ul></div></section>
+<section id="_arquitectura_como_pre_requisito_2"><h2>Arquitectura como pre requisito</h2><div class="paragraph"><p>La arquitectura y la construcción del sistema están relacionadas.</p></div>
+<div class="paragraph"><p><strong>La calidad de la arquitectura determina la integridad conceptual del sistema</strong></p></div>
+<div class="paragraph"><p>McConnell S. Code Complete</p></div>
+<div class="paragraph"><p>… Que a vez determina la calidad del sistema.</p></div></section>
+<section id="_arquitectura_como_pre_requisito_3"><h2>Arquitectura como pre requisito</h2><div class="ulist"><ul><li><p>Una buena arquitectura:</p><div class="ulist"><ul><li><p>provee la bases para el mantenimiento del sistema.</p></li><li><p>facilita el desarrollo.</p></li></ul></div></li><li><p>Una mala arquitectura <strong>complica</strong> el desarrollo.</p></li></ul></div></section>
+<section><div class="imageblock" style=""><img src="images/good-idea.gif" alt="good idea" width="50%" /></div></section>
+<section><div class="imageblock" style=""><img src="images/bad-idea.gif" alt="bad idea" width="50%" /></div></section>
+<section><div class="paragraph"><p>Sin una buena arquitectura:</p></div>
+<div class="ulist"><ul><li><p>podemos tener el problema correcto pero la solución incorrecta.</p></li><li><p>va ser muy difícil desarrollar la aplicación correctamente.</p></li></ul></div></section>
+<section id="_difícil_de_cambiar"><h2>Difícil de cambiar</h2><div class="paragraph"><p>Cambiar la arquitectura luego de iniciado el desarrollo es muy <strong>costoso</strong>.</p></div>
+<div class="ulist"><ul><li><p>El tiempo necesario para cambiar un error en la arquitectura es del mismo orden que cambiar un requisito.</p></li><li><p>Es más fácil cambiar la arquitectura al inicio del proyecto.</p></li></ul></div></section>
+<section id="_componentes_de_la_arquitectura"><h2>Componentes de la arquitectura</h2></section>
+<section id="_organización_del_programa"><h2>Organización del programa</h2><div class="ulist"><ul><li><p>La arquitectura de un sistema requiere una descripción general.</p></li><li><p>Las elecciones deben estar justificadas (tener un propósito).</p></li><li><p>La arquitectura debe definir los componentes más importantes del sistema.</p></li><li><p>Cada componente debe tener un rol en el sistema.</p></li></ul></div></section>
+<section id="_organización_del_programa_2"><h2>Organización del programa</h2><div class="ulist"><ul><li><p>Se recomienda que cada componente conozca tan poco como pueda de los otros componentes y que maneje una sola responsabilidad.</p></li><li><p>La comunicación entre cada bloque del sistema debe estar definida.</p></li><li><p>La arquitectura debe describir las dependencias de cada bloque (directas/indirectas).</p></li></ul></div></section>
+<section id="_clases_principales"><h2>Clases principales</h2></section>
 <section><div class="ulist"><ul><li><p>Fuentes:</p><div class="ulist"><ul><li><p>Code Complete, 2nd. Steve McConnell (2002)</p></li></ul></div></li></ul></div>
 <aside class="notes"><div class="paragraph"><p>Para generar pdf incluir al final de la presentación lo siguiente: ?showNotes=separate-page&amp;print-pdf</p></div></aside></section></div></div><script src="reveal.js-3.7.0/lib/js/head.min.js"></script><script src="reveal.js-3.7.0/js/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
   if (slide.getAttribute('data-background-color')) return;
