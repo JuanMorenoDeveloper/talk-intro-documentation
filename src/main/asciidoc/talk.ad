@@ -190,6 +190,34 @@ Cambiar la arquitectura luego de iniciado el desarrollo es muy **costoso**.
 * ¿Puede una clase asumir que los datos que recibe están limpios?
 * ¿El manejo de excepciones se va hacer a través de librerías o de manera personalizada?
 
+== Tolerancia a fallos
+
+* Se debe especificar que tipo de tolerancia es tolerable por el sistema.
+* ¿Existe backup? ¿Reintentos? Son preguntas que debe contestar la arquitectura.
+
+== Viabilidad de la arquitectura
+
+* La arquitectura debe demostrar que el sistema es viable.
+
+* En caso que existan riesgos, investigaciones o prototipos que deban realizarse, deben ser evidenciados. Los riesgos deben ser mitigados o acordados antes de comenzar la construcción.
+
+== Sobreingeniería
+
+* En software, la cadena no es tan fuerte como su eslabón más débil; es tan débil como todos los enlaces débiles multiplicados juntos.
+
+* La arquitectura debe claramente indicar donde los programadores deben evitar la sobre ingeniería e ir por la solución más simple.
+
+== Decisiones de Comprar vs Desarrollar
+
+* La solución más radical en el software es decidir desarrollar o no desarrollar. Por ejemplo comprando o usando librerías open-source.
+
+* Si en la arquitectura se van a usar componentes que no existen, debe evidenciar cómo esos componentes serán mantenidos y si existen librerías por qué no se usaron.
+
+== Decisiones de reusar
+
+* Si se reusan componentes se debe explicar como se van a usar y que puntos del sistema van a cubrir.
+
+== Estrategia de cambio
 
 
 include::self.ad[]
