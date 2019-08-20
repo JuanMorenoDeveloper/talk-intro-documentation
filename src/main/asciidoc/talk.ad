@@ -154,6 +154,42 @@ Cambiar la arquitectura luego de iniciado el desarrollo es muy **costoso**.
 
 == Escalabilidad
 
+* La arquitectura debe explicitar si es escalable o no. En caso que sí, se debe especificar como el sistema va manejarlo (más servidores, más storage, ¿en qué %?)
+
+== Interoperabilidad
+
+* En caso que el sistema intercambie información con otros, la arquitectura debe especificar cómo lo hace (interfaces, protocolos).
+
+== I18n / L10N
+
+* Encoding, lenguajes soportados, actualización de mensajes sin modificar el código. La arquitectura debe especificar la estrategia escogida y justificarla.
+
+== I/O
+
+* La arquitectura debe especificar como se leen o se escriben datos.
+
+== Procesamiento de errores
+
+* 90% del código de la aplicación puede generar excepciones.
+* La arquitectura debe especificar que estrategia va seguirse para manejarlos apropiadamente.
+* Pueden manejarse como parte de la convención del código.
+
+== Procesamiento de errores
+
+* ¿Correctivo o de detección?
+* ¿La detección va ser activo o pasiva? ¿Cómo afecta la UI?
+* ¿Cómo se propagan los errores?
+* ¿Cuáles son las convenciones para los mensajes de error?
+* ¿Cómo se manejan las excepciones?
+
+== Procesamiento de errores
+
+* ¿Cómo se manejan los errores dentro del código de la aplicación?
+* ¿Cuál es el nivel de responsabilidad de cada clase para validar sus datos de entrada?
+* ¿Cada clase es responsable de validar sus datos? ¿Un grupo de clases valida los datos del sistema?
+* ¿Puede una clase asumir que los datos que recibe están limpios?
+* ¿El manejo de excepciones se va hacer a través de librerías o de manera personalizada?
+
 
 
 include::self.ad[]
