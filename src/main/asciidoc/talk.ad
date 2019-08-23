@@ -104,7 +104,7 @@ Cambiar la arquitectura luego de iniciado el desarrollo es muy **costoso**.
 
 * La arquitectura debe describir un plan para administración de escasos recursos (conexión de bases de datos, threads, storage).
 
-* Se deben evidenciar cuales recursos son necesarios y dimensionar cuánto de ellos se requiere para funcionamiento nominales o extremo del sistema.
+* Se deben evidenciar cuales recursos son necesarios y dimensionar cuánto de ellos se requiere para funcionamiento nominales o extremos del sistema.
 
 == Seguridad icon:lock[]
 
@@ -160,7 +160,7 @@ Cambiar la arquitectura luego de iniciado el desarrollo es muy **costoso**.
 
 == Tolerancia a fallos icon:shield-alt[]
 
-* Se debe especificar que tipo de tolerancia es tolerable por el sistema.
+* Se debe especificar que tipo de tolerancia soporta el sistema.
 * ¿Existe backup? ¿Reintentos? Son preguntas que debe contestar la arquitectura.
 
 == Viabilidad de la arquitectura icon:road[]
